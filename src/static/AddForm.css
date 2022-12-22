@@ -1,0 +1,20 @@
+.date-picker{
+    width: 50px;
+    height: 35px;
+    background: none;
+    border: none;
+}
+
+.date-picker::-webkit-calendar-picker-indicator{
+    width: 50px
+}
+
+.status-container{
+    top: 25%;
+    left: 20%;
+    height: 50%;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+}

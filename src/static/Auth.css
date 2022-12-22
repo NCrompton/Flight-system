@@ -1,0 +1,43 @@
+.form-container{
+    position: relative;
+    box-shadow: inset 0px 0px 50px #f00;
+    background: linear-gradient(45deg, #111, #333);
+    display: block;
+    margin: 10px;
+    z-index: 3;
+}
+
+.glow::before{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: 1;
+    animation: glow-effect 10s linear infinite;
+}
+
+.content-container{
+    height: calc(100% - 1px);
+    width: calc(100% - 1px);
+    background: linear-gradient(45deg, #111, #444);
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    z-index: 2;
+}
+
+@keyframes glow-effect{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}

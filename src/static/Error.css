@@ -1,0 +1,6 @@
+.sign-container{
+    width: 50;
+    height: 50;
+    border: 1px solid #f00;
+    border-radius: 20px;
+}

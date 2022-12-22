@@ -1,0 +1,28 @@
+.select-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    background: #fff;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: center;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.select-item{
+    border-radius: 0px;
+}
+.select-item:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.select-item:hover{
+    background: #ccc;
+}
+
+.select-button{
+    border-radius: 0px 10px 0px 0px;
+    height: 100%;
+}

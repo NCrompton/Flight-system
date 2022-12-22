@@ -1,0 +1,41 @@
+.plane{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    overflow: hidden;
+    animation: fly 5s linear infinite;
+}
+
+.plane-svg{
+
+}
+
+@keyframes flyn{
+    100%{
+        left: 100%;
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes fly{
+    0%{
+        left: 20%;
+        top: 5%;
+        transform: rotate(0deg) translate(-360px);
+    }
+    40%{
+        left: 50%;
+        top: 10%;
+        transform: rotate(180deg) translate(-60px);
+    }
+    60%{
+        left: 50%;
+        top: 10%;
+        transform: rotate(360deg) translate(-60px);
+    }
+    100%{
+        left: 80%;
+        top: 5%;
+        transform: rotate(540deg) translate(-360px);
+    }
+}
